@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{background-color: steelblue;}
+
+.introduction{
+    color: rgb(52, 185, 96);
+    position: relative;
+    animation-name: M416;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes M416 {
+    0% { left: 0px; top: -60px;}
+    
+    50% {left: 850px; top: -60px;}
+    
+    100% {left: 0px; top: -60px;}
+}
+
+
+.entrance img{
+    height: 300px;
+    width: 300px;
+border-radius: 25px;
+margin-left : 150px;
+
+}
+
+button[class=EE]{
+      border-radius: 10px;
+      margin-left: 239px;
+      
+      
+}
+.quotes img{
+    height: 300px;
+    width: 500px;
+      /* background: url(https://cdn-0.therandomvibez.com/wp-content/uploads/2019/01/Inspirational-Quotes-for-Exam-Success.jpg); */
+      margin-left: 500px;
+      border-radius: 20px;
+      border: 5px solid black;
+      
+
+}
+@keyframes mi {
+    from{
+    width: 500px;}
+    to{
+        width: 700px;
+    }
+    
+}
+.GovernmentJob img{
+    height: 300px;
+    width: 300px;
+border-radius: 25px;
+margin-left : 590px;
+}
+.GovernmentJob{ 
+    margin-top: -326px;
+}
+
+button[class=GE] {
+    border-radius: 20px;
+    margin-left: 680px;
+    
+}
+
+.defence img{
+    height: 300px;
+    width: 300px;
+border-radius: 25px;
+margin-left: 1040px;
+}
+
+.defence{
+    margin-top: -325px;
+}
+button[class=DE]{
+    border-radius: 20px;
+    margin-left: 1140px;  
+}
+
+.Admission img{
+    height: 300px;
+    width: 300px;
+border-radius: 25px;
+margin-left: 375px;
+margin-top: 100px;
+} 
+
+button[class=AD]{
+    border-radius: 20px;
+    margin-left: 481px;
+}
+
+.otherexam img{
+    height: 300px;
+    width: 300px;
+border-radius: 25px;
+margin-left: 809px;
+}
+
+.otherexam{
+    margin-top: -325px;
+}
+
+button[class=OE]{
+    border-radius: 20px;
+    margin-left: 921px;
+margin-bottom: 10px;
+}
+h2[class=gg]{
+    text-align: center;
+    margin-left: -297px;
+}
+h4[class=aa]{
+    text-align: center;
+    margin-left: -271px;
+    font-style: italic;
+}
+textarea{
+    margin-left: 265px;
+    margin-top: -40px;
+    
+}
+label[for=FirstName]{
+    margin-left: 378px;
+}
+
+ .fn{
+     margin-left: 262px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+ .ln{
+     margin-left: 262px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+ .eid{
+     margin-left: 262px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+.footer{
+    border: 2px lightcyan;
+    padding: 10px;
+    background-color: lightskyblue;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.ss{
+    margin-left: 262px;
+    border-radius: 3px;
+}
+.entrance:hover{
+    box-shadow: 19px red;
+}
+
+footer{ font-size:20px ;
+    background-color: aqua;
+    padding-left: 30px;  
+    }
+
+
+footer ul{ margin:0;}
+
+.one{ float:left; 
+    padding-left: 30px;}
+
+.two{ float:right;
+        padding-right: 130px;}
+
+.three{ float:left;
+    padding-left: 30px;
+    }
+
+.four{ float:right;
+    padding-right: 135px;}
+    
+.five{ padding-left: 30px;}

@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../asset/tom-barrett-hgGplX3PFBg-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.navbar{
+   height: 12%;
+   display: flex;
+   text-align: center;
+}
+.logo{
+    width: 250px;
+    height: 130px;
+    border-radius: 50%;
+    margin-top: 8px;
+}
+.menu-icons{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+    margin-top: 60px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+
+.hello{
+    color: #fff;
+    font-size: 40px;
+
+}
+
+.hi{
+    color: #fff;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.card{
+    width: 300px;
+    height: 330px;
+    display: inline-block;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(../asset/IMG-20210411-WA0003.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    transition: transform 0.5s;
+}
+.card:hover{
+    transform: translateY(-20px);
+}
+h4{
+    color: #fff;
+    line-height:25px;
+}
+h3{
+    color: #fff;
+}
+
+.underline2{
+    width: 104px;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: relative;
+    top: -11px;
+    left: 0px;
+    overflow: hidden;
+    margin-top: 10px;
+   
+}
+
+.underline2 span{
+    width: 10px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top:0;
+    left: 10px;
+    animation-name: moving;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    line-height: 35px;
+    
+    
+}
+
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+.team-area{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+}
+
+.single-team{
+    width: 360px;
+    height: 400px;
+    padding: 24px;
+    background: #fff;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s ease-out;
+    box-shadow: 0 10px 10px rgba(0, 0, 0,0.5);
+    border-radius: 35px;
+}
+
+.photo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border-radius: 35px;
+}
+
+.single-team:hover{
+    transform: translateY(15px);
+}
+
+.single-team:hover:before{
+    opacity: 1;
+}
+
+.single-team:hover .team-text{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.single-team::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #000, transparent);
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;
+    border-radius: 35px;
+}
+
+
+.single-team .team-text{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(60px);
+    transition: 0.5s;
+    line-height: 30px;
+}
+
+.team-text h2{
+    margin: 0;
+    font-family: shrikhanad;
+    letter-spacing: 3px;
+} 
+ 
+.team-text p{
+     letter-spacing: 1px;
+     font-size: 15px;
+     margin-top: 8px;
+     font-family: poppins;
+} 
+
+.team-text a{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+    text-decoration: none;
+}
+  
+.team-text a i{
+    color: #fff;
+    padding: 6px 8px;
+}
+
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 70%;
+    justify-content: right;
+} 
+
+h1{
+    color: #fff;
+    font-size: 70px;
+}
+.last{
+    color: #fff;
+    font-size:20px;
+
+}
+.card{
+    width: 250px;
+    height: 263px;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    /* background-image: url(../asset/pexels-still-pixels-3699921.jpg); */
+    background-position: center;
+    background-size: cover;
+    text-align: right;
+    margin-right: 30px;
+    transition: transform 0.5s;
+}
+.card1{
+    background-image: url(../asset/LogoMakerCa-1654922186308.jpg);
+}
+.card2{
+    background-image: url(../asset/wp6763949-national-emblem-wallpapers.jpg);
+}
+.card3{
+    background-image: url(../asset/defense2.jpg);
+}
+.card4{
+    background-image: url(../asset/pang-yuhao-_kd5cxwZOK4-unsplash.jpg);
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+h5{
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+}
+
+footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: linear-gradient(to right, #00093c,#2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.rows{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.cols{
+    flex-basis: 25%;
+    padding: 5px;
+}
+  
+.cols:nth-child(2), .cols:nth-child(3){
+    flex-basis: 5%;
+}
+
+.logo2{
+    width: 270px;
+    margin-bottom: 50px;
+    border-radius: 50%;
+}
+
+.cols h3{
+    width: fit-content;
+    margin-top: 40px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff; 
+}
+
+.social-icons .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+hr{
+    width: 90%;
+ 
+    border-bottom: 1px #ccc;
+    margin: 20px auto;
+}
+ .copyright{
+     text-align: center;
+ }
+
+.tags{
+   
+    font-size: 17px;
+    margin-top: -26px;
+    margin-right: 19px;
+ }
+
+ .underline{
+    width: 100px;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: relative;
+    top: 7px;
+    left: 0px;
+    overflow: hidden;
+ }
+
+p{
+    font-size: 15px;
+}
+
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top:0;
+    left: 10px;
+    animation-name: moving;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
